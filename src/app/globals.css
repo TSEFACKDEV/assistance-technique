@@ -1,26 +1,53 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* ── Palette principale ── */
+  --color-primary:       #0078D4;   /* Bleu Microsoft */
+  --color-primary-dark:  #005a9e;
+  --color-primary-light: #4da3e8;
+  --color-accent:        #FF6900;   /* Orange Avast */
+  --color-accent-dark:   #cc5200;
+
+  /* ── Neutres ── */
+  --color-dark:          #0A0F1E;
+  --color-dark-2:        #111827;
+  --color-card:          #161D2F;
+  --color-border:        #1E2D45;
+  --color-muted:         #6B7280;
+  --color-light:         #F0F6FF;
+
+  /* ── Typographie ── */
+  --font-sans: "Inter", "Segoe UI", system-ui, sans-serif;
+
+  /* ── Ombres ── */
+  --shadow-glow:   0 0 40px rgba(0, 120, 212, 0.25);
+  --shadow-card:   0 4px 24px rgba(0, 0, 0, 0.4);
+
+  /* ── Transitions ── */
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* ── Reset & base ── */
+*, *::before, *::after { box-sizing: border-box; }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-dark);
+  color: var(--color-light);
+  font-family: var(--font-sans);
+}
+
+/* ── Scrollbar custom ── */
+::-webkit-scrollbar       { width: 6px; }
+::-webkit-scrollbar-track { background: var(--color-dark-2); }
+::-webkit-scrollbar-thumb { background: var(--color-primary); border-radius: 3px; }
+
+/* ── Sélection ── */
+::selection {
+  background: var(--color-primary);
+  color: #fff;
 }
