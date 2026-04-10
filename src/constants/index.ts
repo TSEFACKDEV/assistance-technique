@@ -1,5 +1,5 @@
 export const COMPANY = {
-  name:    "AssisTechnique",
+  name:    "Assistance technique Microsoft Windows",
   tagline: "Assistance technique Microsoft Windows",
   email:   "microsoft@assistechnique.com",
   domain:  "assistechnique.com",
