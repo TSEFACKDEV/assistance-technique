@@ -39,7 +39,7 @@ export default function Navbar() {
               Assistance technique
             </span>
             <span className="font-bold text-[var(--color-primary)] text-xs">
-              Microsoft Windows
+              Microsoft support
             </span>
           </div>
         </Link>

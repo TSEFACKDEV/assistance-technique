@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Services — AssisTechnique Lyon",
-  description: "Découvrez nos services : installation Windows, antivirus, maintenance, réseau et support à distance à Lyon.",
+  description: "Découvrez nos services : installation Windows, antivirus, maintenance, réseau et support à distance pour particuliers et professionnels en France.",
 };
 
 export default function ServicesPage() {

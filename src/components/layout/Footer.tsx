@@ -27,17 +27,17 @@ export default function Footer() {
                   Assistance technique
                 </span>
                 <span className="font-bold text-[var(--color-primary)] text-xs">
-                  Microsoft Windows
+                  Microsoft support
                 </span>
               </div>
             </Link>
             <p className="text-[var(--color-muted)] text-sm leading-relaxed max-w-sm">
-              Votre expert en assistance technique Microsoft Windows à Lyon.
+              Votre expert en assistance technique Microsoft Windows en France.
               Installation, maintenance et sécurisation de vos systèmes.
             </p>
             <div className="mt-4 flex items-center gap-2 text-xs text-[var(--color-muted)]">
               <FaShieldAlt className="text-orange-400" />
-              <span>Partenaire officiel Avast Business</span>
+              <span>Partenaire officiel Avast & Microsoft</span>
             </div>
           </div>
 

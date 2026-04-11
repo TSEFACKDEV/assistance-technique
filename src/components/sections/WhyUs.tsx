@@ -13,7 +13,7 @@ const REASONS = [
   {
     icon: FaClock,
     title: "Intervention rapide",
-    desc: "Délai d'intervention garanti sous 1h à Lyon et alentours.",
+    desc: "Délai d'intervention garanti sous 1h en France.",
   },
   {
     icon: FaUserShield,
@@ -88,7 +88,7 @@ export default function WhyUs() {
                 Intervention à domicile & en entreprise
               </p>
               <p className="text-[var(--color-muted)] text-sm">
-                Lyon et agglomération — Déplacement rapide garanti
+                en France — Déplacement rapide garanti
               </p>
             </div>
           </div>

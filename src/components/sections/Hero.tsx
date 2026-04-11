@@ -43,7 +43,7 @@ export default function Hero() {
           text-[var(--color-primary-light)] text-sm font-medium"
             >
               <FaWindows className="text-[var(--color-primary)]" />
-              Assistance Technique Microsoft Windows
+              Assistance Technique Microsoft support
             </motion.div>
 
             <motion.h1
@@ -88,7 +88,7 @@ export default function Hero() {
               className="grid grid-cols-3 gap-3"
             >
               {[
-                { value: "500+", label: "Clients satisfaits" },
+                { value: "5000+", label: "Clients satisfaits" },
                 { value: "6j/7", label: "Disponibilité" },
                 { value: "1h", label: "Délai d'intervention" },
               ].map((stat) => (
@@ -188,6 +188,103 @@ export default function Hero() {
               {phone}
             </a>
           ))}
+        </motion.div>
+
+        {/* ── Microsoft Services Strip ── */}
+        <motion.div variants={fadeUp} custom={6} className="mt-14 w-full">
+          {/* Ligne séparatrice */}
+          <div className="flex items-center gap-4 mb-6">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-border)] to-transparent" />
+            <span className="text-xs text-[var(--color-muted)] font-medium uppercase tracking-widest">
+              Écosystème Microsoft
+            </span>
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[var(--color-border)] to-transparent" />
+          </div>
+
+          {/* Scroll horizontal sur mobile, flex wrap sur desktop */}
+          <div
+            className="flex gap-3 overflow-x-auto pb-2 scrollbar-hide
+                  sm:flex-wrap sm:justify-center sm:overflow-visible"
+          >
+            {[
+              {
+                name: "Microsoft",
+                img: "/images/microsoft/logo.avif",
+                href: "https://www.microsoft.com/fr-fr",
+              },
+              {
+                name: "Teams",
+                img: "/images/microsoft/teams.jpeg",
+                href: "https://www.microsoft.com/fr-fr/microsoft-teams/group-chat-software",
+              },
+              {
+                name: "Copilot",
+                img: "/images/microsoft/copilot.jpeg",
+                href: "https://copilot.microsoft.com",
+              },
+              {
+                name: "OneDrive",
+                img: "/images/microsoft/onedrive.webp",
+                href: "https://www.microsoft.com/fr-fr/microsoft-365/onedrive/online-cloud-storage",
+              },
+              {
+                name: "Outlook",
+                img: "/images/microsoft/outlook.jpeg",
+                href: "https://www.microsoft.com/fr-fr/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook",
+              },
+              {
+                name: "Surface",
+                img: "/images/microsoft/surface.jpeg",
+                href: "https://www.microsoft.com/fr-fr/surface",
+              },
+              {
+                name: "Xbox",
+                img: "/images/microsoft/xbox.avif",
+                href: "https://www.xbox.com/fr-FR",
+              },
+            ].map((service, i) => (
+              <motion.a
+                key={service.name}
+                href={service.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{
+                  delay: 0.6 + i * 0.07,
+                  duration: 0.4,
+                  ease: [0.4, 0, 0.2, 1],
+                }}
+                whileHover={{ y: -4, scale: 1.05 }}
+                whileTap={{ scale: 0.97 }}
+                className="flex flex-col items-center gap-2 flex-shrink-0
+                   bg-[var(--color-card)] border border-[var(--color-border)]
+                   rounded-2xl px-5 py-4 min-w-[80px]
+                   hover:border-[var(--color-primary)]/50
+                   hover:shadow-[0_0_20px_rgba(0,120,212,0.15)]
+                   transition-all duration-300 cursor-pointer group"
+              >
+                <div
+                  className="w-10 h-10 rounded-xl overflow-hidden flex items-center justify-center
+                        bg-white/5 group-hover:bg-white/10 transition-colors"
+                >
+                  <Image
+                    src={service.img}
+                    alt={service.name}
+                    width={40}
+                    height={40}
+                    className="w-9 h-9 object-contain"
+                  />
+                </div>
+                <span
+                  className="text-xs text-[var(--color-muted)] group-hover:text-white
+                         transition-colors font-medium whitespace-nowrap"
+                >
+                  {service.name}
+                </span>
+              </motion.a>
+            ))}
+          </div>
         </motion.div>
       </motion.div>
     </section>

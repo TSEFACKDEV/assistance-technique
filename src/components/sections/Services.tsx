@@ -29,7 +29,7 @@ export default function Services() {
         <SectionTitle
           badge="Nos Services"
           title="Tout ce dont vous avez besoin"
-          subtitle="Une gamme complète de services informatiques pour particuliers et professionnels à Lyon et sa région."
+          subtitle="Une gamme complète de services informatiques pour particuliers et professionnels en France"
         />
 
         {/* Visual Windows 11 */}
