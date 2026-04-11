@@ -7,9 +7,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
-      <Services />
       <WhyUs />
-      <Contact />
     </>
   );
 }

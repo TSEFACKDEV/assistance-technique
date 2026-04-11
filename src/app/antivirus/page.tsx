@@ -457,8 +457,6 @@ export default function AntivirusPage() {
           </div>
         </motion.div>
       </section>
-
-      <Contact />
     </div>
   );
 }

@@ -91,7 +91,7 @@ export default function Hero() {
             <motion.div variants={fadeUp} custom={4}
               className="grid grid-cols-3 gap-3 max-w-sm mx-auto lg:mx-0">
               {[
-                { value: "500+", label: "Clients" },
+                { value: "5000+", label: "Clients" },
                 { value: "6j/7", label: "Disponible" },
                 { value: "1h",   label: "Intervention" },
               ].map((stat) => (
