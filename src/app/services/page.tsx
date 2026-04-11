@@ -17,9 +17,7 @@ export default function ServicesPage() {
           Tout ce qu&apos;il faut pour que votre environnement Windows soit sûr, rapide et fiable.
         </p>
       </div>
-      <Services />
-      <WhyUs />
-      <Contact />
+      <Services />  
     </div>
   );
 }

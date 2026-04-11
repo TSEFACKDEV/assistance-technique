@@ -7,7 +7,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 
 const REASONS = [
   { icon: FaMedal,        title: "Expertise certifiée",      desc: "Techniciens qualifiés Microsoft avec années d'expérience.", variant: slideLeft  },
-  { icon: FaClock,        title: "Intervention rapide",      desc: "Délai d'intervention garanti sous 1h à Lyon et alentours.", variant: slideRight },
+  { icon: FaClock,        title: "Intervention rapide",      desc: "Délai d'intervention garanti sous 1h en France.", variant: slideRight },
   { icon: FaUserShield,   title: "Licence Avast officielle", desc: "Nous détenons une licence Avast Business pour vous protéger au meilleur prix.", variant: slideLeft  },
   { icon: FaMapMarkerAlt, title: "Basés à Lyon",             desc: "14 rue Garibaldi, 69006 — au cœur de Lyon pour vous servir.", variant: slideRight },
 ];

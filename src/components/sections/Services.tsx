@@ -23,21 +23,6 @@ export default function Services() {
           subtitle="Une gamme complète de services informatiques pour particuliers et professionnels en France."
         />
 
-        {/* Image Windows 11 */}
-        <motion.div
-          variants={fadeUp} initial="hidden" whileInView="visible" viewport={{ once: true }}
-          className="mb-10 rounded-2xl overflow-hidden border border-[var(--color-border)]
-                     shadow-[var(--shadow-card)]"
-        >
-          <Image
-            src="/images/home/windows11-setup.png"
-            alt="Windows 11 interface"
-            width={1200}
-            height={500}
-            className="w-full h-40 sm:h-56 object-cover"
-          />
-        </motion.div>
-
         <motion.div
           variants={staggerContainer} initial="hidden" whileInView="visible"
           viewport={{ once: true }}
