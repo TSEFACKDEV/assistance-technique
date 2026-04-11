@@ -51,3 +51,10 @@ body {
   background: var(--color-primary);
   color: #fff;
 }
+
+/* Scrollbar hide utility */
+.scrollbar-hide::-webkit-scrollbar { display: none; }
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Prevent horizontal overflow global */
+html, body { overflow-x: hidden; }
