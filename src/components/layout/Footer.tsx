@@ -34,7 +34,7 @@ export default function Footer() {
             <p className="text-[var(--color-muted)] text-sm leading-relaxed max-w-sm">
               Votre expert en assistance technique Microsoft Windows en France.
               Installation, maintenance et sécurisation de vos{" "}
-              <Link href="/teleassistance" className="text-[var(--color-primary-light)] hover:underline">
+              <Link href="/teleassistance" className="text-[var(--color-muted)]">
                 systèmes
               </Link>.
             </p>
