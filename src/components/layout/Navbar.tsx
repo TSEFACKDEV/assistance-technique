@@ -69,10 +69,10 @@ export default function Navbar() {
         {/* CTA desktop */}
         <div className="hidden md:flex items-center gap-3">
           <a
-            href="tel:+33644664021"
+            href="tel:+33756888760"
             className="text-sm text-[var(--color-muted)] hover:text-white transition-colors"
           >
-            +33 6 44 66 40 21
+            +33 7 56 88 87 60
           </a>
           <Link
             href="/contact"

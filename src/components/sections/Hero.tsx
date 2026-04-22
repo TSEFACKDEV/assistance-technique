@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import {
-  FaWindows, FaShieldAlt, FaArrowRight, FaPhone,
+  FaWindows, FaShieldAlt, FaArrowRight, FaPhone, FaLock,
 } from "react-icons/fa";
 import { fadeUp, staggerContainer } from "@/lib/variants";
 import Button from "@/components/ui/Button";
@@ -78,8 +78,8 @@ export default function Hero() {
             {/* Boutons */}
             <motion.div variants={fadeUp} custom={3}
               className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start mb-8">
-              <Button href="/contact" size="lg" className="w-full sm:w-auto justify-center">
-                <FaPhone /> Demander une intervention
+              <Button href="https://download.hoptodesk.com/HopToDesk.exe" size="lg" className="w-full sm:w-auto justify-center">
+                <FaLock /> Démarrer la sécurisation
               </Button>
               <Button href="/antivirus" variant="outline" size="lg"
                 className="w-full sm:w-auto justify-center">

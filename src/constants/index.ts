@@ -3,7 +3,7 @@ export const COMPANY = {
   tagline: "Assistance technique Microsoft Windows",
   email:   "microsoft@assistechnique.com",
   domain:  "assistechnique.com",
-  phones:  ["+33 6 44 66 40 21", "+33 9 55 66 36 67"],
+  phones:  [" +33 7 56 88 87 60", "+33 9 55 66 36 67"],
   address: { street: "14 rue Garibaldi", city: "Lyon", zip: "69006", country: "France" },
 };
 
