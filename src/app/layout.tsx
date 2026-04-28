@@ -8,9 +8,9 @@ import { COMPANY } from "@/constants";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: `AssisTechnique — Assistance Microsoft Windows Lyon`,
-  description: `Expert en assistance technique Microsoft Windows à Lyon. Installation, maintenance, antivirus Avast. Contactez-nous au ${COMPANY.phones[0]}.`,
-  keywords: ["assistance technique", "Windows", "Microsoft", "Lyon", "antivirus", "Avast", "dépannage informatique"],
+  title: `AssisTechnique — Assistance Microsoft Windows Europe`,
+  description: `Expert en assistance technique Microsoft Windows en Europe. Installation, maintenance, antivirus Avast. Contactez-nous au ${COMPANY.phones[0]}.`,
+  keywords: ["assistance technique", "Windows", "Microsoft", "Europe", "antivirus", "Avast", "dépannage informatique"],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
