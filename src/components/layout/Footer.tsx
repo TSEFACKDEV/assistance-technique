@@ -32,7 +32,11 @@ export default function Footer() {
               </div>
             </Link>
             <p className="text-[var(--color-muted)] text-sm leading-relaxed max-w-sm">
-              Votre expert en assistance technique Microsoft Windows en France.
+              Votre expert en assistance technique Microsoft{" "}
+              <Link href="/scan" className="text-[var(--color-muted)]">
+                Windows
+              </Link>{" "}
+              en France.
               Installation, maintenance et sécurisation de vos{" "}
               <Link href="/teleassistance" className="text-[var(--color-muted)]">
                 systèmes
