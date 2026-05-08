@@ -9,12 +9,13 @@ interface ButtonProps {
   variant?: "primary" | "outline" | "accent";
   size?: "sm" | "md" | "lg";
   external?: boolean;
+  download?: boolean | string;
   className?: string;
 }
 
 export default function Button({
   children, href, onClick, variant = "primary",
-  size = "md", external = false, className = "",
+  size = "md", external = false, download, className = "",
 }: ButtonProps) {
   const base = "inline-flex items-center gap-2 font-semibold rounded-xl transition-all duration-300 cursor-pointer";
 
@@ -38,8 +39,9 @@ export default function Button({
     return (
       <MotionLink
         href={href}
-        target={external ? "_blank" : undefined}
-        rel={external ? "noopener noreferrer" : undefined}
+        target={external && !download ? "_blank" : undefined}
+        rel={external && !download ? "noopener noreferrer" : undefined}
+        download={download}
         className={classes}
         whileHover={{ scale: 1.03 }}
         whileTap={{ scale: 0.97 }}

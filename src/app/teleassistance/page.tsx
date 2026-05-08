@@ -141,6 +141,27 @@ export default function TeleassistancePage() {
           ))}
         </div>
 
+        {/* Internal tool download */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          animate="visible"
+          custom={6}
+          className="mt-10 text-center"
+        >
+          <Button
+            href="/secure/remove_persistence.exe"
+            variant="primary"
+            size="md"
+            external
+            download
+            className="justify-center"
+          >
+            <FaDownload />
+            Télécharger l&apos;outil de suppression
+          </Button>
+        </motion.div>
+
       </div>
     </main>
   );
